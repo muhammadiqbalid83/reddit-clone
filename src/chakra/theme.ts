@@ -5,9 +5,11 @@ import "@fontsource/open-sans/700.css";
 import { extendTheme } from "@chakra-ui/react";
 
 // 2. Extend the theme to include custom colors, fonts, etc
-const colors = {
-  brand: {
-    900: "#ff3c00",
+export const theme = extendTheme({
+  colors: {
+    brand: {
+      100: "#FF3C00",
+    },
   },
   fonts: {
     body: "Open Sans, sans-serif",
@@ -19,9 +21,4 @@ const colors = {
       },
     }),
   },
-  components: {
-    //Button
-  },
-};
-
-export const theme = extendTheme({ colors });
+});
